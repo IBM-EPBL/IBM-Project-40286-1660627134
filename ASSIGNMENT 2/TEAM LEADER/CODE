@@ -1,0 +1,18 @@
+#program for temperature sensing
+import random
+i=1
+while i<=1:
+       d=random.choice(range(30,90,1)) #random temp readings
+       c=random.choice(range(15,30,1))
+       h=d
+       print(h)
+       x=c
+       print(x)
+       if (h>30) & (x>15):
+          if (h<60) & (x<30):
+             print("noraml humidity and normal temperature")  
+          else:
+             print("high humidity and high temperature")  
+             print("alarm detected")
+       else:
+             print("low humidity and low temperature")  
