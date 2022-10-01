@@ -1,1 +1,15 @@
+from random import*
+from datetime import datetime
+temp=randint(1,100);
+num=randint(1,100);
+now = datetime.now()
 
+current_time = now.strftime("%H:%M:%S")
+
+print("temperature is",temp,"\n humidity is", num,"\n time:",current_time);
+if temp>=30 and num>70:
+    print("alarm is on,now hazardous area...be safe");
+elif temp>=50:
+    print("alarm is on and the temperature is high");
+else:
+    print("everything is good and the alarm is off");
