@@ -1,1 +1,29 @@
+from RPi.GPIO import GPIO
+from time import sleep
+
+GPIO.setmode (GPIO.BOARD)
+
+red=2
+yellow=3
+green=4
+
+GPIO.setup(red, GPIO.OUT)
+GPIO.setup(yellow, GPIO.OUT)
+GPIO.setup(green, GPIO.OUT)
+
+while True: 
+     GPIO.output(red, GPIO.HIGH) 
+     sleep(5) 
+     GPIO.output(red, GPIO.LOW) 
+     sleep(5) 
+     GPIO.output(yellow, GPIO.HIGH) 
+     sleep(3) 
+     GPIO.output(yellow, GPIO.LOW) 
+     sleep(3) 
+     GPIO.output(green, GPIO.HIGH) 
+     sleep(5) 
+     GPIO.output(green, GPIO.LOW) 
+     sleep(5)
+GPIO.clearup()
+
 
