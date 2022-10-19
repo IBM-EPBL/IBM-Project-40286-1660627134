@@ -1,4 +1,3 @@
-
 x = input("Enter value: ")
 stop_light = int(x)
 while True:
