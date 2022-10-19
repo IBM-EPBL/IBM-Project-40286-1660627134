@@ -11,4 +11,3 @@ for i in range(40,100):
         print(humidity)
         print("alarm is off");
             
-
